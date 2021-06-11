@@ -1,0 +1,46 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class RPS_game {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String s = "scissors";
+        String r = "rocks";
+        String p = "papers";
+
+        System.out.println("enter a and b ");
+
+        System.out.print("enter a: ");
+        String a = sc.nextLine();
+        System.out.print("enter b: ");
+        String b = sc.nextLine();
+
+
+
+        if (a.equals(s)  &&  b.equals(r) ){
+            System.out.println("b is winner");
+        }
+        else if (a.equals(s) && b.equals(p)){
+            System.out.println("a is winner");
+        }
+        else if (a.equals(r) && b.equals(s)){
+            System.out.println("a is winner");
+        }
+        else if (a.equals(r) && b.equals(p)){
+            System.out.println("b is winner");
+        }
+        else if (a.equals(p) && b.equals(r)){
+            System.out.println("a is winner");
+        }
+        else if (a.equals(p) && b.equals(s)){
+            System.out.println("b is winner");
+        }
+        else {
+            System.out.println("tie");
+        }
+
+    }
+}
